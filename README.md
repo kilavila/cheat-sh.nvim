@@ -29,4 +29,4 @@ try searching for `:intro`, `:list` and `:help`.
 ## TODO
 
 - [ ] Add completion for search field(using /:list)
-- [ ] Language detection for syntax highlighting
+- [ ] Language detection for syntax highlighting
