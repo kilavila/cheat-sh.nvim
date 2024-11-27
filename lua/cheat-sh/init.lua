@@ -6,6 +6,11 @@ local M = {}
 local _url = "https://cheat.sh/"
 local _url_params = "?qT"
 
+M.close_search = function()
+	local cur_win = vim.api.nvim_get_current_win()
+	vim.api.nvim_win_close(cur_win, true)
+end
+
 M.search = function(v)
 	local buf = vim.api.nvim_create_buf(false, true)
 	if v then

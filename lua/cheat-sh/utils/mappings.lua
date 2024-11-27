@@ -2,6 +2,8 @@ local _mappings = {}
 
 _mappings.normal = {
 	["<cr>"] = "run_search()",
+	["q"] = "close_search()",
+	["<esc>"] = "close_search()",
 }
 _mappings.insert = {
 	["<cr>"] = "run_search()",
@@ -18,7 +20,7 @@ _mappings.set = function(buf)
 		)
 	end
 
-	for k, v in pairs(_mappings.insert) do
+	for k, v in pairs(_mappings.normal) do
 		vim.api.nvim_buf_set_keymap(
 			buf,
 			"n",
